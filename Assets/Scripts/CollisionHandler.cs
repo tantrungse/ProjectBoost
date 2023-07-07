@@ -4,10 +4,12 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     AudioSource audioSource;
-    [SerializeField] AudioClip crash;
-    [SerializeField] AudioClip success;
     [SerializeField] float levelLoadDelay = 1f;
     bool isTransitioning = false;
+    [SerializeField] AudioClip crash;
+    [SerializeField] AudioClip success;
+    [SerializeField] ParticleSystem crashParticles;
+    [SerializeField] ParticleSystem successParticles;
 
     void Start()
     {
@@ -35,6 +37,7 @@ public class CollisionHandler : MonoBehaviour
     {
         // todo add particle effect upon crash
         isTransitioning = true;
+        crashParticles.Play();
         audioSource.Stop();
         audioSource.PlayOneShot(crash);
         GetComponent<Movement>().enabled = false;
@@ -45,6 +48,7 @@ public class CollisionHandler : MonoBehaviour
     {
         // todo add particle effect upon crash
         isTransitioning = true;
+        successParticles.Play();
         audioSource.Stop();
         audioSource.PlayOneShot(success);
         GetComponent<Movement>().enabled = false;
