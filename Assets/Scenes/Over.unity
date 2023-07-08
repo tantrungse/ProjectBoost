@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &92727998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5109586540753347918, guid: 1258750220e113347ab1aac20311f77f, type: 3}
+  m_PrefabInstance: {fileID: 5109586540384295266}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &302061329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,7 +1372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5109586540753347922, guid: 1258750220e113347ab1aac20311f77f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.42
+      value: -2.48
       objectReference: {fileID: 0}
     - target: {fileID: 5109586540753347922, guid: 1258750220e113347ab1aac20311f77f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1412,6 +1417,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5109586540753347922, guid: 1258750220e113347ab1aac20311f77f, type: 3}
   m_PrefabInstance: {fileID: 5109586540384295266}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5109586540384295271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92727998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb31de5baab22b4cb5ad6645a6ee79e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 8, y: 0, z: 0}
+  period: 2
 --- !u!1001 &6044690735754752674
 PrefabInstance:
   m_ObjectHideFlags: 0
